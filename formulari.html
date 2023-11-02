@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pràctica 4</title>
+    <link rel="stylesheet" href="fitxer.css">
+  </head>
+<body>
+  <h1>Subscriu-te al noticiari ITIC Barcelona</h1>
+  <h2>Primer, explica'ns qui ets</h2>
+  <form action="subscriu.html"> <!-- todo el contenido del formulario se pone con la etiqueta FORM. Action es para redigerir otro lugar si usamos suubmit-->
+    <label for="email" class="mida" required="obligaroty">Email: </label> <!-- LABEL es una etiqueta de interfaz con el usuario.  FOR hace referencia al id.  --> 
+    <!-- ID y CLASS hacen referencia a selectores, que es atribuir a todos los elementos de un HTML para luego aplicar estilos a los elementos marcados con esa clase o id -->
+    <input type="email" id="email" required="obligaroty"><br><br> <!-- INPUT sirve para interactuar con el usuario y que este escriba. -->
+    <!--TYPE es un atributo que indica el tipo de elemento o control a mostrar.-->
+    <!-- NAME sirve para especificar un nombre para el elemento -->
+    <!-- REQUIRED sirve para poner un campo obligatorio -->
+    <!-- BR para hacer un cambio de linea este elementos -->
+    <label for="nom">Nom i cognoms: </label>
+    <input type="text" id="nom" required="obligaroty"><br><br>
+    <label for="edat">Edat: </label>
+    <input type="number" id="edat" required="obligaroty"><br>
+    <h2>Quin cicle estàs estudiant?</h2>
+    <input type="radio" id="ASIX" checked> <!-- RATIO es un atributo para que aparezca es forma redonda a la hora de seleccionar algun elemento -->
+    <!-- CHECKED para que un elemento este selecciona predeterminadamente -->
+    <label for="ASIX">ASIX</label><br>
+    <input type="radio" id="DAM">
+    <label for="DAM">DAM</label><br>
+    <input type="radio" id="DAW">
+    <label for="DAW">DAW</label><br><br>
+    <label class="h2" for="curs">I en quin curs?</label>
+    <select id="curs">
+    <!--SELECT sirve para seleccionar en forma de rectangulo -->
+    <option value="curs">Primer</option>
+    <!-- VALUE es un atributo que define un valor en formato de cadena de texto que aparecerá por defecto en la declaración anterior -->
+    <option value="curs">Segons</option>
+    </select>
+    <h2>Marca els temes que vulguis estar sempre al dia!</h2>
+    <input type="checkbox" checked>
+    <!-- CHECKBOX es para seleccionar en forma de cuadrado en ves de radio que era en forma circula este es cuadrado como un to-list -->
+    <label>Intel·ligència artificial</label><br>
+    <input type="checkbox">
+    <label>Computació quàntica</label><br>
+    <input type="checkbox">
+    <label>Supercomputadors</label><br>
+    <input type="checkbox">
+    <label>Recerca en algotísme</label><br><br>
+    <label for="textarea">Hi ha algun tema més t'interessi? Explica'ns-ho!</label><br><br>
+    <textarea id="textarea" rows="10" cols="70" placeholder="Tambè m'agradaria saber les últimes novetats sobre..."></textarea><br><br>
+    <!-- TEXTAREA para poner un texto muy grande. ROW es la altura del texto. COLS es lo ancho que será -->
+    <!-- PLACEHORLDER es un atributo que pone un texto que luego cuando haces click dentro del campo desaparece, es como poner un ejemplo lo que se tiene que poner-->
+    <input type="submit" value="Subscriu-me"><br><br>
+    <!-- SUBMIT se utilzar para botones donde queremos enviar la informacion del formulario -->
+  </form>
+</body>
+</html>
